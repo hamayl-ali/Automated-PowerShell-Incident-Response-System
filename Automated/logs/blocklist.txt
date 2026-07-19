@@ -1,0 +1,2 @@
+2026-07-14T12:37:29.194089+00:00	185.220.101.47	HIGH severity: Remote Download Cradle
+2026-07-14T12:37:29.194443+00:00	45.153.160.2	CRITICAL severity: Credential Access Tooling

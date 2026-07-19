@@ -1,0 +1,172 @@
+[
+  {
+    "timestamp": "2026-07-14T12:36:38.480816+00:00",
+    "event_id": "evt-001",
+    "host": "WKSTN-042",
+    "user": "jsmith",
+    "pid": 999901,
+    "max_severity": "high",
+    "findings": [
+      {
+        "rule": "Remote Download Cradle",
+        "mitre_technique": "T1105",
+        "mitre_technique_name": "Ingress Tool Transfer",
+        "mitre_tactic": "Command and Control",
+        "severity": "high"
+      }
+    ],
+    "mode": "detect_only",
+    "action_taken": false,
+    "actions": [],
+    "disposition": "alert only - detect_only mode"
+  },
+  {
+    "timestamp": "2026-07-14T12:36:38.480827+00:00",
+    "event_id": "evt-002",
+    "host": "WKSTN-017",
+    "user": "agupta",
+    "pid": 999902,
+    "max_severity": "critical",
+    "findings": [
+      {
+        "rule": "AMSI Bypass Attempt",
+        "mitre_technique": "T1562.001",
+        "mitre_technique_name": "Disable or Modify Tools",
+        "mitre_tactic": "Defense Evasion",
+        "severity": "critical"
+      }
+    ],
+    "mode": "detect_only",
+    "action_taken": false,
+    "actions": [],
+    "disposition": "alert only - detect_only mode"
+  },
+  {
+    "timestamp": "2026-07-14T12:36:38.480836+00:00",
+    "event_id": "evt-003",
+    "host": "WKSTN-005",
+    "user": "backup_svc",
+    "pid": 999903,
+    "max_severity": "none",
+    "findings": [],
+    "mode": "detect_only",
+    "action_taken": false,
+    "actions": [],
+    "disposition": "benign - no action"
+  },
+  {
+    "timestamp": "2026-07-14T12:36:38.480840+00:00",
+    "event_id": "evt-004",
+    "host": "WKSTN-088",
+    "user": "mkhan",
+    "pid": 999904,
+    "max_severity": "critical",
+    "findings": [
+      {
+        "rule": "Credential Access Tooling",
+        "mitre_technique": "T1003",
+        "mitre_technique_name": "OS Credential Dumping",
+        "mitre_tactic": "Credential Access",
+        "severity": "critical"
+      }
+    ],
+    "mode": "detect_only",
+    "action_taken": false,
+    "actions": [],
+    "disposition": "alert only - detect_only mode"
+  },
+  {
+    "timestamp": "2026-07-14T12:36:38.480844+00:00",
+    "event_id": "evt-005",
+    "host": "WKSTN-023",
+    "user": "rwilliams",
+    "pid": 999905,
+    "max_severity": "none",
+    "findings": [],
+    "mode": "detect_only",
+    "action_taken": false,
+    "actions": [],
+    "disposition": "benign - no action"
+  },
+  {
+    "timestamp": "2026-07-14T12:36:38.480847+00:00",
+    "event_id": "evt-006",
+    "host": "WKSTN-061",
+    "user": "tnovak",
+    "pid": 999906,
+    "max_severity": "none",
+    "findings": [],
+    "mode": "detect_only",
+    "action_taken": false,
+    "actions": [],
+    "disposition": "benign - no action"
+  },
+  {
+    "timestamp": "2026-07-14T12:36:38.480850+00:00",
+    "event_id": "evt-007",
+    "host": "WKSTN-042",
+    "user": "jsmith",
+    "pid": 999907,
+    "max_severity": "high",
+    "findings": [
+      {
+        "rule": "Base64 Encoded Command",
+        "mitre_technique": "T1027",
+        "mitre_technique_name": "Obfuscated Files or Information",
+        "mitre_tactic": "Defense Evasion",
+        "severity": "high"
+      }
+    ],
+    "mode": "detect_only",
+    "action_taken": false,
+    "actions": [],
+    "disposition": "alert only - detect_only mode"
+  },
+  {
+    "timestamp": "2026-07-14T12:36:38.480853+00:00",
+    "event_id": "evt-008",
+    "host": "WKSTN-030",
+    "user": "svc_monitor",
+    "pid": 999908,
+    "max_severity": "none",
+    "findings": [],
+    "mode": "detect_only",
+    "action_taken": false,
+    "actions": [],
+    "disposition": "benign - no action"
+  },
+  {
+    "timestamp": "2026-07-14T12:36:38.480855+00:00",
+    "event_id": "evt-009",
+    "host": "WKSTN-074",
+    "user": "dcohen",
+    "pid": 999909,
+    "max_severity": "medium",
+    "findings": [
+      {
+        "rule": "Defense Evasion Flags",
+        "mitre_technique": "T1562",
+        "mitre_technique_name": "Impair Defenses",
+        "mitre_tactic": "Defense Evasion",
+        "severity": "medium"
+      }
+    ],
+    "mode": "detect_only",
+    "action_taken": false,
+    "actions": [],
+    "disposition": "alert only - detect_only mode"
+  },
+  {
+    "timestamp": "2026-07-14T12:36:38.480858+00:00",
+    "event_id": "evt-010",
+    "host": "WKSTN-011",
+    "user": "helpdesk1",
+    "pid": 999910,
+    "max_severity": "none",
+    "findings": [],
+    "mode": "detect_only",
+    "action_taken": false,
+    "actions": [],
+    "disposition": "benign - no action"
+  }
+]
