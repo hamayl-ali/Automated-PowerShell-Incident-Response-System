@@ -1,0 +1,22 @@
+title: Hidden Window PowerShell with Realtime Monitoring Disabled
+id: 8f4b2a10-91c3-4d7e-9a2b-000000000005
+status: experimental
+description: >
+  Detects PowerShell launched with a hidden window style AND an attempt to
+  disable Windows Defender real-time monitoring in the same command -- a
+  much stronger combined signal than either indicator alone.
+author: Hamayl
+date: 2026/07/23
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection_hidden:
+    script_block|contains: '-windowstyle hidden'
+  selection_disable_av:
+    script_block|contains: 'disablerealtimemonitoring'
+  condition: selection_hidden and selection_disable_av
+level: high
+tags:
+  - attack.defense_evasion
+  - attack.t1562.001

@@ -1,0 +1,22 @@
+title: AMSI Bypass via AmsiUtils Reflection
+id: 8f4b2a10-91c3-4d7e-9a2b-000000000002
+status: experimental
+description: >
+  Detects PowerShell commands that use .NET reflection against the
+  AmsiUtils internal class to disable AMSI (Antimalware Scan Interface)
+  scanning before executing a malicious payload.
+author: Hamayl
+date: 2026/07/23
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    script_block|contains:
+      - 'amsiutils'
+      - 'amsiinitfailed'
+  condition: selection
+level: critical
+tags:
+  - attack.defense_evasion
+  - attack.t1562.001

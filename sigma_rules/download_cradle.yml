@@ -1,0 +1,22 @@
+title: PowerShell Remote Download Cradle
+id: 8f4b2a10-91c3-4d7e-9a2b-000000000004
+status: experimental
+description: >
+  Detects common PowerShell download cradle patterns used to fetch and
+  execute a second-stage payload from a remote server.
+author: Hamayl
+date: 2026/07/23
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  keywords:
+    script_block|contains:
+      - 'downloadstring'
+      - 'net.webclient'
+      - 'invoke-webrequest'
+  condition: keywords
+level: high
+tags:
+  - attack.command_and_control
+  - attack.t1105

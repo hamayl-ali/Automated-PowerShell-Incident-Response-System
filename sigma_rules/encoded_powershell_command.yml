@@ -1,0 +1,22 @@
+title: Suspicious Base64 Encoded PowerShell Command
+id: 8f4b2a10-91c3-4d7e-9a2b-000000000001
+status: experimental
+description: >
+  Detects PowerShell invoked with an encoded command parameter (-enc /
+  -encodedcommand), a common technique for obfuscating malicious payloads
+  from casual inspection and simple string-matching defenses.
+author: Hamayl
+date: 2026/07/23
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    script_block|contains:
+      - '-enc '
+      - '-encodedcommand'
+  condition: selection
+level: high
+tags:
+  - attack.defense_evasion
+  - attack.t1027

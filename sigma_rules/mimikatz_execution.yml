@@ -1,0 +1,21 @@
+title: Mimikatz Credential Dumping Indicators
+id: 8f4b2a10-91c3-4d7e-9a2b-000000000003
+status: experimental
+description: >
+  Detects keywords associated with Mimikatz or its PowerShell wrapper
+  (Invoke-Mimikatz), commonly used for OS credential dumping via LSASS.
+author: Hamayl
+date: 2026/07/23
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    script_block|contains:
+      - 'invoke-mimikatz'
+      - 'sekurlsa'
+  condition: selection
+level: critical
+tags:
+  - attack.credential_access
+  - attack.t1003
