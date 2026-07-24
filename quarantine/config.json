@@ -1,7 +1,0 @@
-{
-  "mode": "auto_respond",
-  "min_severity_to_act": "high",
-  "quarantine_dir": "./quarantine",
-  "blocklist_path": "./logs/blocklist.txt",
-  "webhook_url": null
-}
