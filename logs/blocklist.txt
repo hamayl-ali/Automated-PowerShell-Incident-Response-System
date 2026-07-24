@@ -1,0 +1,2 @@
+2026-07-24T14:41:48.981376+00:00	185.220.101.47	HIGH severity: Remote Download Cradle, PowerShell Remote Download Cradle, Remote_Download_Cradle
+2026-07-24T14:41:48.981599+00:00	45.153.160.2	CRITICAL severity: Credential Access Tooling, Mimikatz Credential Dumping Indicators, Mimikatz_Keywords

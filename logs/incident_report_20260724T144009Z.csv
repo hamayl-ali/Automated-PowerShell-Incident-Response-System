@@ -1,0 +1,11 @@
+timestamp,event_id,host,user,pid,max_severity,mitre_techniques,detection_sources,disposition,action_taken,actions_summary
+2026-07-24T14:40:09.423077+00:00,evt-001,WKSTN-042,jsmith,999901,high,T1105,"regex, sigma, yara",alert only - detect_only mode,False,
+2026-07-24T14:40:09.423085+00:00,evt-002,WKSTN-017,agupta,999902,critical,T1562.001,"regex, sigma, yara",alert only - detect_only mode,False,
+2026-07-24T14:40:09.423090+00:00,evt-003,WKSTN-005,backup_svc,999903,none,,,benign - no action,False,
+2026-07-24T14:40:09.423093+00:00,evt-004,WKSTN-088,mkhan,999904,critical,T1003,"regex, sigma, yara",alert only - detect_only mode,False,
+2026-07-24T14:40:09.423096+00:00,evt-005,WKSTN-023,rwilliams,999905,none,,,benign - no action,False,
+2026-07-24T14:40:09.423098+00:00,evt-006,WKSTN-061,tnovak,999906,high,T1547.001,yara,alert only - detect_only mode,False,
+2026-07-24T14:40:09.423101+00:00,evt-007,WKSTN-042,jsmith,999907,high,"T1027, T1105","regex, sigma, yara",alert only - detect_only mode,False,
+2026-07-24T14:40:09.423103+00:00,evt-008,WKSTN-030,svc_monitor,999908,none,,,benign - no action,False,
+2026-07-24T14:40:09.423105+00:00,evt-009,WKSTN-074,dcohen,999909,high,"T1562, T1562.001","regex, sigma, yara",alert only - detect_only mode,False,
+2026-07-24T14:40:09.423107+00:00,evt-010,WKSTN-011,helpdesk1,999910,none,,,benign - no action,False,

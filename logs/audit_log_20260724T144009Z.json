@@ -1,0 +1,308 @@
+[
+  {
+    "timestamp": "2026-07-24T14:40:09.423077+00:00",
+    "event_id": "evt-001",
+    "host": "WKSTN-042",
+    "user": "jsmith",
+    "pid": 999901,
+    "max_severity": "high",
+    "findings": [
+      {
+        "rule": "Remote Download Cradle",
+        "mitre_technique": "T1105",
+        "mitre_technique_name": "Ingress Tool Transfer",
+        "mitre_tactic": "Command and Control",
+        "severity": "high",
+        "source": "regex"
+      },
+      {
+        "rule": "PowerShell Remote Download Cradle",
+        "mitre_technique": "T1105",
+        "mitre_technique_name": "PowerShell Remote Download Cradle",
+        "mitre_tactic": "Command And Control",
+        "severity": "high",
+        "source": "sigma",
+        "sigma_id": "8f4b2a10-91c3-4d7e-9a2b-000000000004"
+      },
+      {
+        "rule": "Remote_Download_Cradle",
+        "severity": "high",
+        "mitre_technique": "T1105",
+        "source": "yara",
+        "description": "Detects common PowerShell remote download cradle patterns",
+        "matched_strings": [
+          "$a",
+          "$b"
+        ]
+      }
+    ],
+    "mode": "detect_only",
+    "action_taken": false,
+    "actions": [],
+    "disposition": "alert only - detect_only mode"
+  },
+  {
+    "timestamp": "2026-07-24T14:40:09.423085+00:00",
+    "event_id": "evt-002",
+    "host": "WKSTN-017",
+    "user": "agupta",
+    "pid": 999902,
+    "max_severity": "critical",
+    "findings": [
+      {
+        "rule": "AMSI Bypass Attempt",
+        "mitre_technique": "T1562.001",
+        "mitre_technique_name": "Disable or Modify Tools",
+        "mitre_tactic": "Defense Evasion",
+        "severity": "critical",
+        "source": "regex"
+      },
+      {
+        "rule": "AMSI Bypass via AmsiUtils Reflection",
+        "mitre_technique": "T1562.001",
+        "mitre_technique_name": "AMSI Bypass via AmsiUtils Reflection",
+        "mitre_tactic": "Defense Evasion",
+        "severity": "critical",
+        "source": "sigma",
+        "sigma_id": "8f4b2a10-91c3-4d7e-9a2b-000000000002"
+      },
+      {
+        "rule": "AMSI_Bypass_Reflection",
+        "severity": "critical",
+        "mitre_technique": "T1562.001",
+        "source": "yara",
+        "description": "Detects AMSI bypass via .NET reflection against AmsiUtils",
+        "matched_strings": [
+          "$a",
+          "$b"
+        ]
+      }
+    ],
+    "mode": "detect_only",
+    "action_taken": false,
+    "actions": [],
+    "disposition": "alert only - detect_only mode"
+  },
+  {
+    "timestamp": "2026-07-24T14:40:09.423090+00:00",
+    "event_id": "evt-003",
+    "host": "WKSTN-005",
+    "user": "backup_svc",
+    "pid": 999903,
+    "max_severity": "none",
+    "findings": [],
+    "mode": "detect_only",
+    "action_taken": false,
+    "actions": [],
+    "disposition": "benign - no action"
+  },
+  {
+    "timestamp": "2026-07-24T14:40:09.423093+00:00",
+    "event_id": "evt-004",
+    "host": "WKSTN-088",
+    "user": "mkhan",
+    "pid": 999904,
+    "max_severity": "critical",
+    "findings": [
+      {
+        "rule": "Credential Access Tooling",
+        "mitre_technique": "T1003",
+        "mitre_technique_name": "OS Credential Dumping",
+        "mitre_tactic": "Credential Access",
+        "severity": "critical",
+        "source": "regex"
+      },
+      {
+        "rule": "Mimikatz Credential Dumping Indicators",
+        "mitre_technique": "T1003",
+        "mitre_technique_name": "Mimikatz Credential Dumping Indicators",
+        "mitre_tactic": "Credential Access",
+        "severity": "critical",
+        "source": "sigma",
+        "sigma_id": "8f4b2a10-91c3-4d7e-9a2b-000000000003"
+      },
+      {
+        "rule": "Mimikatz_Keywords",
+        "severity": "critical",
+        "mitre_technique": "T1003",
+        "source": "yara",
+        "description": "Detects Mimikatz-related keywords indicating credential dumping",
+        "matched_strings": [
+          "$a",
+          "$b",
+          "$c"
+        ]
+      }
+    ],
+    "mode": "detect_only",
+    "action_taken": false,
+    "actions": [],
+    "disposition": "alert only - detect_only mode"
+  },
+  {
+    "timestamp": "2026-07-24T14:40:09.423096+00:00",
+    "event_id": "evt-005",
+    "host": "WKSTN-023",
+    "user": "rwilliams",
+    "pid": 999905,
+    "max_severity": "none",
+    "findings": [],
+    "mode": "detect_only",
+    "action_taken": false,
+    "actions": [],
+    "disposition": "benign - no action"
+  },
+  {
+    "timestamp": "2026-07-24T14:40:09.423098+00:00",
+    "event_id": "evt-006",
+    "host": "WKSTN-061",
+    "user": "tnovak",
+    "pid": 999906,
+    "max_severity": "high",
+    "findings": [
+      {
+        "rule": "Persistence_Registry_Run_Key",
+        "severity": "high",
+        "mitre_technique": "T1547.001",
+        "source": "yara",
+        "description": "Detects registry Run key persistence via PowerShell",
+        "matched_strings": [
+          "$a",
+          "$b"
+        ]
+      }
+    ],
+    "mode": "detect_only",
+    "action_taken": false,
+    "actions": [],
+    "disposition": "alert only - detect_only mode"
+  },
+  {
+    "timestamp": "2026-07-24T14:40:09.423101+00:00",
+    "event_id": "evt-007",
+    "host": "WKSTN-042",
+    "user": "jsmith",
+    "pid": 999907,
+    "max_severity": "high",
+    "findings": [
+      {
+        "rule": "Base64 Encoded Command",
+        "mitre_technique": "T1027",
+        "mitre_technique_name": "Obfuscated Files or Information",
+        "mitre_tactic": "Defense Evasion",
+        "severity": "high",
+        "source": "regex"
+      },
+      {
+        "rule": "PowerShell Remote Download Cradle",
+        "mitre_technique": "T1105",
+        "mitre_technique_name": "PowerShell Remote Download Cradle",
+        "mitre_tactic": "Command And Control",
+        "severity": "high",
+        "source": "sigma",
+        "sigma_id": "8f4b2a10-91c3-4d7e-9a2b-000000000004"
+      },
+      {
+        "rule": "Suspicious Base64 Encoded PowerShell Command",
+        "mitre_technique": "T1027",
+        "mitre_technique_name": "Suspicious Base64 Encoded PowerShell Command",
+        "mitre_tactic": "Defense Evasion",
+        "severity": "high",
+        "source": "sigma",
+        "sigma_id": "8f4b2a10-91c3-4d7e-9a2b-000000000001"
+      },
+      {
+        "rule": "Base64_Encoded_PowerShell_Flag",
+        "severity": "high",
+        "mitre_technique": "T1027",
+        "source": "yara",
+        "description": "Detects the -enc / -encodedcommand PowerShell flag used to obfuscate payloads",
+        "matched_strings": [
+          "$a"
+        ]
+      },
+      {
+        "rule": "Remote_Download_Cradle",
+        "severity": "high",
+        "mitre_technique": "T1105",
+        "source": "yara",
+        "description": "Detects common PowerShell remote download cradle patterns",
+        "matched_strings": [
+          "$a",
+          "$b"
+        ]
+      }
+    ],
+    "mode": "detect_only",
+    "action_taken": false,
+    "actions": [],
+    "disposition": "alert only - detect_only mode"
+  },
+  {
+    "timestamp": "2026-07-24T14:40:09.423103+00:00",
+    "event_id": "evt-008",
+    "host": "WKSTN-030",
+    "user": "svc_monitor",
+    "pid": 999908,
+    "max_severity": "none",
+    "findings": [],
+    "mode": "detect_only",
+    "action_taken": false,
+    "actions": [],
+    "disposition": "benign - no action"
+  },
+  {
+    "timestamp": "2026-07-24T14:40:09.423105+00:00",
+    "event_id": "evt-009",
+    "host": "WKSTN-074",
+    "user": "dcohen",
+    "pid": 999909,
+    "max_severity": "high",
+    "findings": [
+      {
+        "rule": "Defense Evasion Flags",
+        "mitre_technique": "T1562",
+        "mitre_technique_name": "Impair Defenses",
+        "mitre_tactic": "Defense Evasion",
+        "severity": "medium",
+        "source": "regex"
+      },
+      {
+        "rule": "Hidden Window PowerShell with Realtime Monitoring Disabled",
+        "mitre_technique": "T1562.001",
+        "mitre_technique_name": "Hidden Window PowerShell with Realtime Monitoring Disabled",
+        "mitre_tactic": "Defense Evasion",
+        "severity": "high",
+        "source": "sigma",
+        "sigma_id": "8f4b2a10-91c3-4d7e-9a2b-000000000005"
+      },
+      {
+        "rule": "Defense_Evasion_Disable_Realtime_Monitoring",
+        "severity": "medium",
+        "mitre_technique": "T1562",
+        "source": "yara",
+        "description": "Detects an attempt to disable Windows Defender real-time monitoring",
+        "matched_strings": [
+          "$a"
+        ]
+      }
+    ],
+    "mode": "detect_only",
+    "action_taken": false,
+    "actions": [],
+    "disposition": "alert only - detect_only mode"
+  },
+  {
+    "timestamp": "2026-07-24T14:40:09.423107+00:00",
+    "event_id": "evt-010",
+    "host": "WKSTN-011",
+    "user": "helpdesk1",
+    "pid": 999910,
+    "max_severity": "none",
+    "findings": [],
+    "mode": "detect_only",
+    "action_taken": false,
+    "actions": [],
+    "disposition": "benign - no action"
+  }
+]
